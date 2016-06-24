@@ -642,6 +642,12 @@ config MSM_BCL_PERIPHERAL_CTL
 	  provides routines to configure and monitor the BCL
 	  PMIC peripheral.
 
+config FORCE_FAST_CHARGE
+	bool "Force faster charge rate for USB"
+	default n
+	help
+	  This allows users to override default charge rate for USB.
+
 config MSM_BCL_SOMC_CTL
 	bool "BCL driver to control with new condition"
 	depends on BATTERY_BCL
