@@ -304,4 +304,3 @@ MODULE_AUTHOR("Miro Zmrzli <miro@qnovocorp.com>");
 MODULE_DESCRIPTION("QNS System Driver v2");
 MODULE_LICENSE("GPL v2");
 MODULE_ALIAS("QNS");
-
