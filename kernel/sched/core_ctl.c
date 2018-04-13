@@ -994,7 +994,7 @@ static struct notifier_block __refdata cpu_notifier = {
 	.notifier_call = cpu_callback,
 };
 
-/* 
+/*
  * Function for external Hotplug to disabling core control.
  */
 void disable_core_control(bool disable)
