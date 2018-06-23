@@ -545,9 +545,13 @@ extern struct cpufreq_governor cpufreq_gov_alucardsched;
 #define CPUFREQ_DEFAULT_GOVERNOR	(&cpufreq_gov_alucardsched)
 #elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_DARKNESSSCHED)
 extern struct cpufreq_governor cpufreq_gov_darknesssched;
-#define CPUFREQ_DEFAULT_GOVERNOR	(&cpufreq_gov_pwrutilx)
+#define CPUFREQ_DEFAULT_GOVERNOR        (&cpufreq_gov_darknesssched)
 #elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_PWRUTILX)
 extern struct cpufreq_governor cpufreq_gov_pwrutilx;
+#define CPUFREQ_DEFAULT_GOVERNOR        (&cpufreq_gov_pwrutilx)
+#elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_ALUCARD)
+extern struct cpufreq_governor cpufreq_gov_alucard;
+#define CPUFREQ_DEFAULT_GOVERNOR        (&cpufreq_gov_alucard)
 #endif
 
 static inline void cpufreq_policy_apply_limits(struct cpufreq_policy *policy)
